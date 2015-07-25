@@ -4,7 +4,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('1E-Alex')
     .directive('rdLoading', rdLoading);
 
 function rdLoading() {

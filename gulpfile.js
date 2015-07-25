@@ -17,6 +17,7 @@ var paths = {
     templates: 'src/templates/**/*.html',
     index: 'src/index.html',
     bower_fonts: 'src/components/**/*.{ttf,woff,eof,svg}',
+    custom_fonts: 'src/fonts/**/*.*',
 };
 
 /**
@@ -26,7 +27,7 @@ gulp.task('usemin', function() {
     return gulp.src(paths.index)
         .pipe(usemin({
             js: [minifyJs(), 'concat'],
-            css: [minifyCss({keepSpecialComments: 0}), 'concat'],
+            css: [minifyCss({keepSpecialComments: 0}), 'concat']
         }))
         .pipe(gulp.dest('dist/'));
 });
@@ -34,7 +35,7 @@ gulp.task('usemin', function() {
 /**
  * Copy assets
  */
-gulp.task('build-assets', ['copy-bower_fonts']);
+gulp.task('build-assets', ['copy-bower_fonts', 'copy-custom_fonts']);
 
 gulp.task('copy-bower_fonts', function() {
     return gulp.src(paths.bower_fonts)
@@ -42,6 +43,11 @@ gulp.task('copy-bower_fonts', function() {
             dirname: '/fonts'
         }))
         .pipe(gulp.dest('dist/lib'));
+});
+
+gulp.task('copy-custom_fonts', function() {
+    return gulp.src(paths.custom_fonts)
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 /**
@@ -64,6 +70,8 @@ gulp.task('custom-js', function() {
 gulp.task('custom-less', function() {
     return gulp.src(paths.styles)
         .pipe(less())
+        .pipe(minifyCss())
+        .pipe(concat('1e-alex.min.css'))
         .pipe(gulp.dest('dist/css'));
 });
 

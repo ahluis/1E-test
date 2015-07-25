@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('1E-Alex')
     .controller('AlertsCtrl', ['$scope', AlertsCtrl]);
 
 function AlertsCtrl($scope) {

@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('1E-Alex')
     .directive('rdWidgetFooter', rdWidgetFooter);
 
 function rdWidgetFooter() {

@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('1E-Alex')
     .directive('rdWidgetBody', rdWidgetBody);
 
 function rdWidgetBody() {
