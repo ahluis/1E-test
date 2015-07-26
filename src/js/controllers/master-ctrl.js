@@ -2,7 +2,8 @@
  * Master Controller
  */
 
-angular.module('RDash')
+angular
+    .module('1E-Alex')
     .controller('MasterCtrl', ['$scope', '$cookieStore', MasterCtrl]);
 
 function MasterCtrl($scope, $cookieStore) {
@@ -31,6 +32,7 @@ function MasterCtrl($scope, $cookieStore) {
     $scope.toggleSidebar = function() {
         $scope.toggle = !$scope.toggle;
         $cookieStore.put('toggle', $scope.toggle);
+        
     };
 
     window.onresize = function() {

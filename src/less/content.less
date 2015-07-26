@@ -1,0 +1,27 @@
+@import "variables.less";
+
+#content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-top: 5px solid @1EOrange;
+    
+    .page-content {
+        margin-left: 2px;
+    }
+}
+
+@media only screen and (min-width:561px){
+    #page-wrapper.open {
+        padding-left: 300px;
+    }
+}
+@media only screen and (max-width:560px){
+    #page-wrapper.open {
+        padding-left: 80px;
+    }
+}
+#page-wrapper.open #sidebar-wrapper {
+
+}

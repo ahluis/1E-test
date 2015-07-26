@@ -3,12 +3,12 @@
  */
 
 angular
-    .module('RDash')
-    .directive('rdWidgetHeader', rdWidgetTitle);
+    .module('1E-Alex')
+    .directive('dashboardWidgetHeader', dashboardWidgetTitle);
 
-function rdWidgetTitle() {
+function dashboardWidgetTitle() {
     var directive = {
-        requires: '^rdWidget',
+        requires: '^dashboardWidget',
         scope: {
             title: '@',
             icon: '@'

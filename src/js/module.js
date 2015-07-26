@@ -1,1 +1,1 @@
-angular.module('RDash', ['ui.bootstrap', 'ui.router', 'ngCookies']);
+angular.module('1E-Alex', ['ui.bootstrap', 'ui.router', 'ngCookies']);

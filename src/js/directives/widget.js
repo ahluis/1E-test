@@ -3,10 +3,10 @@
  */
 
 angular
-    .module('RDash')
-    .directive('rdWidget', rdWidget);
+    .module('1E-Alex')
+    .directive('dashboardWidget', dashboardWidget);
 
-function rdWidget() {
+function dashboardWidget() {
     var directive = {
         transclude: true,
         template: '<div class="widget" ng-transclude></div>',
