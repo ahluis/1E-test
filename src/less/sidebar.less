@@ -27,6 +27,7 @@ ul.sidebar {
     overflow-y: auto;
     width: 100%;
     li {
+        white-space: nowrap;
         a {
             color: #fff;
             display: block;
@@ -39,6 +40,8 @@ ul.sidebar {
         margin-bottom:10px;
         padding-left: 40px;
         padding-right: 40px;
+        transition: all .6s ease 0s;
+
         .sidebar-top-line {
             border-top: 1px solid #373432;
             border-bottom: 1px solid #34302e;
@@ -55,6 +58,7 @@ ul.sidebar {
             border-bottom: 1px solid #282523;
             padding-top:8px;
             padding-bottom: 7px;
+            transition: all .6s ease 0s;
             img {
                 width: 45px;
             }
@@ -76,12 +80,19 @@ ul.sidebar {
     }
     .sidebar-main-title {
         color: @sidebarTitleColor;
-        height: 35px;
         transition: all .6s ease 0s;
         padding-left: 30px;
+        font-size: 1.3em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        i {
+            font-size: 1.4em;
+            margin-right: 15px;
+        }
     }
     .sidebar-menu-title {
-        color: #9e9a98;
+        color: #9f9c99;
         padding-left: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -119,7 +130,18 @@ ul.sidebar {
 
         ul.sidebar {
             bottom: 0;
-            .sidebar-item-text {
+            
+            .sidebar-separator {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+            .sidebar-main {
+                a {
+                    padding-left: 18px;
+                }
+            }
+            .sidebar-hidden-collapsed {
                 display: none;
             }
             .sidebar-title {

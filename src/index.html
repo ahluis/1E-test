@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
     <!-- endbuild -->
     
-    <link rel="stylesheet" type="text/css" href="/css/1e-alex.min.css">
+    <link rel="stylesheet" type="text/css" href="css/1e-alex.min.css">
 
 
     <!-- SCRIPTS -->
@@ -33,60 +33,45 @@
             <ul class="sidebar">
                 <li class="sidebar-main">
                     <a ng-click="toggleSidebar()">
-                        <img src="/img/1E-logo.png" /> <span class="powered-by sidebar-item-text">Powered by 1E</span>
+                        <img src="img/1E-logo.png" /> <span class="powered-by sidebar-hidden-collapsed">Powered by 1E</span>
                     </a>
                 </li>
+                <li class="sidebar-separator sidebar-hidden-collapsed">
+                    <div class="sidebar-top-line"></div>
+                    <div class="sidebar-bottom-line"></div>
+                </li>
+                <li class="sidebar-main-title">
+                    <i class="fa fa-home"></i> <span class="sidebar-hidden-collapsed">Home</span>
+                </li>
                 <li class="sidebar-separator">
                     <div class="sidebar-top-line"></div>
                     <div class="sidebar-bottom-line"></div>
                 </li>
-                <li class="sidebar-section-title"><i class="fa fa-home"></i> <span>Home</span></li>
+                <li class="sidebar-menu-title sidebar-hidden-collapsed">
+                    <span class="sidebar-hidden-collapsed">Available Dashboards</span>
+                </li>
+                <li class="sidebar-list">
+                    <a href="#"><i class="menu-icon fa fa-shield"></i> <span class="sidebar-hidden-collapsed">Windows Risk Audit</span></a>
+                </li>
+                <li class="sidebar-list">
+                    <a href="#/tables"><i class="menu-icon fa fa-heart-o"></i> <span class="sidebar-hidden-collapsed">Config Manager Health</span></a>
                 <li class="sidebar-separator">
                     <div class="sidebar-top-line"></div>
                     <div class="sidebar-bottom-line"></div>
                 </li>
-                <li class="sidebar-list">
-                    <a href="#"><i class="menu-icon fa fa-shield"></i> <span class="sidebar-item-text">Windows Risk Audit</span></a>
+                <li class="sidebar-menu-title sidebar-hidden-collapsed">
+                    <span class="sidebar-hidden-collapsed">Coming Soon</span>
                 </li>
                 <li class="sidebar-list">
-                    <a href="#/tables"><i class="menu-icon fa fa-heart-o"></i> <span class="sidebar-item-text">Config Manager Health</span></a>
-                <li class="sidebar-separator">
-                    <div class="sidebar-top-line"></div>
-                    <div class="sidebar-bottom-line"></div>
+                    <a href="#"><i class="menu-icon fa fa-trash-o"></i> <span class="sidebar-hidden-collapsed">Software Waste Analysis</span></a>
                 </li>
                 <li class="sidebar-list">
-                    <a href="#"><i class="menu-icon fa fa-trash-o"></i> <span class="sidebar-item-text">Software Waste Analysis</span></a>
+                    <a href="#/tables"><i class="menu-icon fa fa-eye"></i> <span class="sidebar-hidden-collapsed">Security Benchmark Analysis</span></a>
                 </li>
                 <li class="sidebar-list">
-                    <a href="#/tables"><i class="menu-icon fa fa-eye"></i> <span class="sidebar-item-text">Security Benchmark Analysis</span></a>
-                </li>
-                <li class="sidebar-list">
-                    <a href="#"><i class="menu-icon fa fa-windows"></i> <span class="sidebar-item-text">Windows Upgrade Readiness<span></a>
-                </li>
-                <li class="sidebar-list">
-                    <a href="#/tables"><i class="menu-icon fa fa-user"></i> <span class="sidebar-item-text">Self Service Feasability</span></a>
-                </li>
-                <li class="sidebar-list">
-                    <a href="#/tables"><i class="menu-icon fa fa-power-off"></i> <span class="sidebar-item-text">Power Consumption Baseline</span></a>
+                    <a href="#"><i class="menu-icon fa fa-windows"></i> <span class="sidebar-hidden-collapsed">Windows Upgrade Readiness<span></a>
                 </li>
             </ul>
-            <div class="sidebar-footer">
-              <div class="col-xs-4">
-                <a href="https://github.com/rdash/rdash-angular" target="_blank">
-                  Github
-                </a>
-              </div>
-              <div class="col-xs-4">
-                <a href="https://github.com/rdash/rdash-angular/README.md" target="_blank">
-                  About
-                </a>
-              </div>
-              <div class="col-xs-4">
-                <a href="#">
-                  Support
-                </a>
-              </div>
-            </div>
         </div>
         <!-- End Sidebar -->
 
@@ -95,64 +80,14 @@
 
                 <!-- Header Bar -->
                 <div class="row header">
-                    <div class="col-xs-12">
-                        <div class="user pull-right">
-                            <div class="item dropdown">
-                                <a href="#" class="dropdown-toggle">
-                                    <script src="../gulpfile.js" type="text/javascript"></script>
-                                    <img src="img/avatar.jpg">
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="dropdown-header">
-                                        Joe Bloggs
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li class="link">
-                                        <a href="#">
-                                          Profile
-                                        </a>
-                                    </li>
-                                    <li class="link">
-                                        <a href="#">
-                                          Menu Item
-                                        </a>
-                                    </li>
-                                    <li class="link">
-                                        <a href="#">
-                                          Menu Item
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li class="link">
-                                        <a href="#">
-                                          Logout
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="item dropdown">
-                                <a href="#" class="dropdown-toggle">
-                                    <i class="fa fa-bell-o"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="dropdown-header">
-                                        Notifications
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">Server Down!</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="meta">
-                            <div class="page">
-                                Dashboard
-                            </div>
-                            <div class="breadcrumb-links">
-                                Home / Dashboard
-                            </div>
-                        </div>
+                    <div class="col-sm-6 col-xs-10">
+                        <h3>
+                            <i class="fa fa-cogs branded-icon"></i> Intell<span class="branded-text">1</span class="branded-text">g<span class="branded-text">E</span>nce</h4>
+                        </h3>
+                    </div>
+                    <div class="col-sm-6 col-xs-2 header-btn-container">
+                        <a class="btn btn-rounded btn-green pull-right"><i class="fa fa-cog"></i></a>
+                        <a class="btn btn-rounded btn-green pull-right hidden-xs">Update dashboard <i class="fa fa-refresh"></i></a>
                     </div>
                 </div>
                 <!-- End Header Bar -->

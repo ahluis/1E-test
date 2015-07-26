@@ -4,11 +4,11 @@
 
 angular
     .module('1E-Alex')
-    .directive('rdWidgetHeader', rdWidgetTitle);
+    .directive('dashboardWidgetHeader', dashboardWidgetTitle);
 
-function rdWidgetTitle() {
+function dashboardWidgetTitle() {
     var directive = {
-        requires: '^rdWidget',
+        requires: '^dashboardWidget',
         scope: {
             title: '@',
             icon: '@'

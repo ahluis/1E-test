@@ -4,11 +4,11 @@
 
 angular
     .module('1E-Alex')
-    .directive('rdWidgetFooter', rdWidgetFooter);
+    .directive('dashboardWidgetFooter', dashboardWidgetFooter);
 
-function rdWidgetFooter() {
+function dashboardWidgetFooter() {
     var directive = {
-        requires: '^rdWidget',
+        requires: '^dashboardWidget',
         transclude: true,
         template: '<div class="widget-footer" ng-transclude></div>',
         restrict: 'E'
